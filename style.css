@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700|Oswald:200,300,400,500,600,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #777777;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------------------------------------------------------------- HEADER */
+
+/* Header created with help from https://www.youtube.com/watch?v=oLgtucwjVII&feature=youtu.be and adjusted to fit the SK Training website*/
+
+header {
+    border-top: 4px solid #353628;
+    border-bottom: 4px solid #353628;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+.navigation {
+    box-sizing: border-box;
+    background: #fafafa;
+    height: 60px;
+    width: 100%;
+}
+
+#logo {
+    font-family: Oswald;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #353628;
+    font-size: 35px;
+    line-height: 60px;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+.logo-index:hover {
+    text-decoration: none;
+}
+
+.navigation ul {
+    list-style: none;    
+    float: right;
+    margin-right: 20px;    
+}
+
+.navigation ul li {
+    display: inline-block;
+    line-height: 59px;
+    margin: 0;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #353628;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.active,.menu-item a:hover {
+    text-decoration: none;
+    background: #ef733e;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #353628;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+dl, ol, ul {
+    margin-bottom: 0;
+} 
+
+/* ---------------------------------------------------------------- END HEADER */
+
+/* ---------------------------------------------------------------- BANNER */
+/* Banner created with help from https://jorgan-source.github.io/MilestoneProject1JOrgan/ and adjusted to fit the SK Training website-*/
+
+.banner-container{
+    background: url(images/banner.jpg) no-repeat center; 
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 4px solid #353628; 
+    margin-top: 68px;
+}
+
+#banner {
+    background-color: RGBA(67,70,39,0.8);
+}
+
+.cover-text {
+    color: #fff;
+    font-family: Oswald;
+    text-transform: uppercase;
+    text-align: center;
+}
+    
+.cover-text h2 {
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+/* ---------------------------------------------------------------- END BANNER */
+
+/* ---------------------------------------------------------------- BUTTONS */
+
+#select-user {
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.btn--select-user {
+  font-weight: bold;
+  border-radius: 40px;
+  height: 60px;
+  width: 300px;
+  padding-top: 10px;
+  color: white;
+  background-color: #353628;
+  border-color: #353628;
+  text-align: center;
+  margin: 10px;
+}
+
+.btn--select-user:hover,
+.btn--select-user:active,
+.btn--select-user:focus,
+.btn--select-user:active:focus {
+  background-color: #ef733e;
+  border-color: #ef733e;
+  color: white;
+}
+
+#select-user ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input[type=submit] {
+  background-color: #353628;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ef733e;
+}
+
+/* ---------------------------------------------------------------- END BUTTONS */
+
+/* ---------------------------------------------------------------- ABOUT */
+
+.about {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.h4-about {
+    text-align: center;
+}
+
+.p-about {
+    text-align: justify;
+}
+
+.link-in-text {
+    color: inherit;
+}
+
+/* ---------------------------------------------------------------- END ABOUT */
+
+/* ---------------------------------------------------------------- COURSES */
+
+.container-courses {
+    margin-top: 30px;
+    margin-bottom: 30px;  
+    text-align: justify;
+}
+
+.col-md-1 i {
+    color: #ef733e;
+}
+
+/* ---------------------------------------------------------------- END COURSES */
+
+/* ---------------------------------------------------------------- FEES */
+
+.page-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+hr {
+    margin: auto;
+    width: 160px;
+    border-top: 4px solid #ef733e;
+}
+
+.container-fees {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.col-fees {
+    border: 1px solid #353628;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.col-fees i {
+    font-size: 30px;
+    color: #ef733e;
+}
+
+/* ---------------------------------------------------------------- END FEES */
+
+/* ---------------------------------------------------------------- CONTACT FORM /SIGN IN */
+
+/* Contact and sign in form created with help from https://www.w3schools.com/howto/howto_css_contact_form.asp and adjusted to fit the SK Training website*/
+
+input[type=text], input[type=password], input[type=email], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+#subject {
+    height: 200px;
+}
+
+.form-container {
+  border-radius: 5px;
+  background-color: #fafafa;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-information {
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------- END CONTACT FORM */
+
+/* ---------------------------------------------------------------- RESUME */
+
+.timeline-c {
+    padding: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline:before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid #353628;
+    border-radius: 50%;
+    background: #ef733e;
+    z-index: 1;
+}
+
+.timeline:after {
+    content: "";
+    border-left: 2px solid #353628;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0.7rem;
+    z-index: 0;
+}
+
+.timeline h4 {
+    text-transform: uppercase;
+}
+
+.timeline .timeline-date {
+    padding-right: 3rem;
+}
+
+.timeline .timeline-date span {
+    display: inline-block;
+    font-weight: bold;
+    padding: .2rem .4rem;
+    margin: -4px 0 1rem 0;
+}
+
+.timeline .timeline-info {
+    flex: 1;
+    margin: 0 0 2rem 0;
+}
+
+.timeline-info h4 {
+    font-weight: 500;
+}
+
+.timeline-info p {
+    margin-bottom: 8px;
+}
+
+.timeline-info p {
+    margin-bottom: 0;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.col-md-2 {
+        padding: 10px;
+}
+
+.container-resume {
+     padding-bottom: 30px;
+}
+
+#logos {
+    text-align: center;
+}
+
+/* ---------------------------------------------------------------- END RESUME */
+
+/* ---------------------------------------------------------------- FOOTER */
+
+footer {
+    background-color: #353628;
+    color: #fafafa;
+    padding: 0;
+    margin-top: auto;
+    text-align: center;
+}
+
+.social-links {
+  text-align: center;
+}
+
+.social-links li {
+  display: inline;
+}
+
+.social-links i {
+  font-size: 1.25rem;
+  padding: 2%;
+  color: #fff;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.social-links li a i:hover {
+    text-decoration: none;
+    color: #ef733e;
+}
+
+/* ---------------------------------------------------------------- END FOOTER */
+
+---------------------------------------------------------------- MEDIA QUERIES */
+
+/* @media screen and (max-width: 1200px) {
+    #select-user ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { 
+    .btn--select-user {
+        margin: 32px;
+    }
+    #select-user {
+        margin-top: 64px;
+    }
+}
+
+@media screen and (min-width: 1024px) { 
+    .banner-container {
+        height: 35em;
+    }
+}
+
+@media screen and (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .navigation ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #353628;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    .navigation ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .navigation ul li a {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .active,.navigation a:hover {
+        background: none;
+        color: #ef733e;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) { 
+    .rounded-circle {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .courses-details {
+        text-align: center;
+    }
+
+    #logos, #contact {
+    text-align: justify;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .timeline {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .timeline:before {
+        left: 10rem;
+    }
+
+    .timeline:after {
+        left: 10.65rem;
+    }
+
+    .timeline .timeline-date .span1 {
+    margin: -4px 27.68px 1rem 0;
+    }
+
+     .timeline .timeline-date .span2 {
+    margin: -4px 28.46px 1rem 0;
+    }
+
+     .timeline .timeline-date .span3 {
+    margin: -4px 25.43px 1rem 0;
+    }
+
+     .timeline .timeline-date .span4 {
+    margin: -4px 22.18px 1rem 0;
+    }
+
+    .timeline .timeline-date .span5 {
+    margin: -4px 28.75px 1rem 0;
+    }
+
+    .timeline .timeline-date .span6 {
+    margin: -4px 25.43px 1rem 0;
+    }
+} */
+
+/* ---------------------------------------------------------------- END MEDIA QUERIES
